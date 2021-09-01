@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: release-please-action
         id: release
-        uses: google-github-actions/release-please-action@v2.19.2
+        uses: GoogleCloudPlatform/release-please-action@v2
         with:
           release-type: simple
+          
