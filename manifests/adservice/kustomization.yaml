@@ -8,4 +8,4 @@ resources:
 images:
   - name: adservice
     newName: nyuta01/adservice
-    newTag: "0b3156f"
+    newTag: "v1.1.2"
