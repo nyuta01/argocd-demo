@@ -18,6 +18,23 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
+  name: sealed-secret
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/infra/sealed-secret
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
   name: argocd
 spec:
   project: default
