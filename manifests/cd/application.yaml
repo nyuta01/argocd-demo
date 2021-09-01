@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: adservice
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/nyuta01/argocd-demo
+    targetRevision: main
+    path: manifests/adservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
