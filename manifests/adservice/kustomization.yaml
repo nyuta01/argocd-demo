@@ -4,3 +4,8 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+
+images:
+  - name: adservice
+    newName: nyuta01/adservice
+    # newTag: "v1.1.1-8-gac9004e0"
