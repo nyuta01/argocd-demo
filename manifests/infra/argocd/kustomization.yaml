@@ -3,11 +3,7 @@ kind: Kustomization
 
 resources:
 - namespace.yaml
-- https://raw.githubusercontent.com/argoproj/argo-cd/master/manifests/ha/install.yaml
+- https://raw.githubusercontent.com/argoproj/argo-cd/v2.1.1/manifests/ha/install.yaml
+- https://raw.githubusercontent.com/argoproj-labs/argocd-image-updater/v0.10.2/manifests/install.yaml
 
 namespace: argocd
-
-images:
-- name: quay.io/argoproj/argocd
-  newName: ghcr.io/argoproj/argocd
-  newTag: 2.2.0-dd2900ea
