@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.0...v1.1.1) (2021-09-01)
+
+
+### Bug Fixes
+
+* modify filename ([21ac39c](https://www.github.com/nyuta01/argocd-demo/commit/21ac39cd021473122f10b4bf3f883ce49873506c))
+
 ## [1.1.0](https://www.github.com/nyuta01/argocd-demo/compare/v1.0.0...v1.1.0) (2021-09-01)
 
 
