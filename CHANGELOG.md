@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/nyuta01/argocd-demo/compare/v1.0.0...v1.1.0) (2021-09-01)
+
+
+### Features
+
+* add istio system ([b57f690](https://www.github.com/nyuta01/argocd-demo/commit/b57f69096450c3f7d8b1a5a8918c6334cfd35206))
+
 ## 1.0.0 (2021-09-01)
 
 
