@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.2...v1.2.0) (2021-09-01)
+
+
+### Features
+
+* add cartservice manifest ([c5b3e9b](https://www.github.com/nyuta01/argocd-demo/commit/c5b3e9b6a38586f14cd38caf32bca60133809d36))
+
 ### [1.1.2](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.1...v1.1.2) (2021-09-01)
 
 
