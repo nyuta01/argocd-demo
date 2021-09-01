@@ -37,7 +37,7 @@ kind: Application
 metadata:
   name: adservice
   annotations:
-    argocd-image-updater.argoproj.io/image-list: docker.io/nyuta01/adservice:^1.0.0
+    argocd-image-updater.argoproj.io/image-list: nyuta01/adservice:^1.0.0
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
 spec:
