@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.2](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.1...v1.1.2) (2021-09-01)
+
+
+### Bug Fixes
+
+* modify workflow ([e23a5f9](https://www.github.com/nyuta01/argocd-demo/commit/e23a5f9f53cdb7b45e37033f3959d3b2a8c65ac8))
+
 ### [1.1.1](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.0...v1.1.1) (2021-09-01)
 
 
