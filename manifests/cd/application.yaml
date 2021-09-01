@@ -35,6 +35,23 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
+  name: istio
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/infra/istio
+  destination:
+    server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
   name: argocd
 spec:
   project: default
