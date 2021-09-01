@@ -5,6 +5,7 @@ resources:
   - namespace.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/v2.1.1/manifests/ha/install.yaml
   - https://raw.githubusercontent.com/argoproj-labs/argocd-image-updater/v0.10.2/manifests/install.yaml
+  - argocd-image-updater-sealed-secret.yaml
 patchesStrategicMerge:
   - argocd-rbac-cm.yaml
   - argocd-cm.yaml
