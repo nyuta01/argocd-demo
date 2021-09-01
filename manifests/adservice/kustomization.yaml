@@ -7,5 +7,5 @@ resources:
 
 images:
   - name: adservice
-    newName: docker.io/nyuta01/adservice
+    newName: nyuta01/adservice
     newTag: "0b3156f"
