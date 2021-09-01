@@ -7,5 +7,6 @@ resources:
   - https://raw.githubusercontent.com/argoproj-labs/argocd-image-updater/v0.10.2/manifests/install.yaml
 patchesStrategicMerge:
   - argocd-rbac-cm.yaml
+  - argocd-cm.yaml
 
 namespace: argocd
