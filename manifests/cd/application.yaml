@@ -53,3 +53,25 @@ spec:
     automated:
       prune: true
       selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cartservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: nyuta01/cartservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/git-branch: main
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/cartservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
