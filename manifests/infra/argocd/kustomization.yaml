@@ -9,5 +9,6 @@ resources:
 patchesStrategicMerge:
   - argocd-rbac-cm.yaml
   - argocd-cm.yaml
+  - argocd-image-updater-secret.yaml
 
 namespace: argocd
