@@ -8,4 +8,4 @@ resources:
 images:
   - name: adservice
     newName: docker.io/nyuta01/adservice
-    # newTag: "v1.1.1-8-gac9004e0"
+    newTag: "0b3156f"
