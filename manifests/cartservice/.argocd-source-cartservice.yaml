@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - nyuta01/cartservice:v1.2.0

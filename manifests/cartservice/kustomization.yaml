@@ -7,6 +7,4 @@ resources:
 images:
 - name: cartservice
   newName: nyuta01/cartservice
-  newTag: v1.1.2
-- name: nyuta01/cartservice
   newTag: v1.2.0
