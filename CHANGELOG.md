@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://www.github.com/nyuta01/argocd-demo/compare/v1.2.0...v1.2.1) (2021-09-02)
+
+
+### Bug Fixes
+
+* modify argocd manifest ([40c5707](https://www.github.com/nyuta01/argocd-demo/commit/40c5707acf0672d83eb6a6775197a77b52e8c4ca))
+
 ## [1.2.0](https://www.github.com/nyuta01/argocd-demo/compare/v1.1.2...v1.2.0) (2021-09-01)
 
 
