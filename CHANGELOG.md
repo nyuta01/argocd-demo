@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.2](https://www.github.com/nyuta01/argocd-demo/compare/v1.2.1...v1.2.2) (2021-09-02)
+
+
+### Bug Fixes
+
+* modify image name ([23f3cb8](https://www.github.com/nyuta01/argocd-demo/commit/23f3cb8b83ff97323e95a38a5509e51542ae5c20))
+
 ### [1.2.1](https://www.github.com/nyuta01/argocd-demo/compare/v1.2.0...v1.2.1) (2021-09-02)
 
 
