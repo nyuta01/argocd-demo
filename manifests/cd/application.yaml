@@ -37,7 +37,7 @@ kind: Application
 metadata:
   name: adservice
   annotations:
-    argocd-image-updater.argoproj.io/image-list: nyuta01/adservice:^1.0.0
+    argocd-image-updater.argoproj.io/image-list: adservice=nyuta01/adservice:^1.0.0
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
     argocd-image-updater.argoproj.io/write-back-target: kustomization
     argocd-image-updater.argoproj.io/adservice.kustomize.image-name: adservice
@@ -47,6 +47,9 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/adservice
+    kustomize:
+      images:
+        - adservice=nyuta01/adservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -60,7 +63,7 @@ kind: Application
 metadata:
   name: cartservice
   annotations:
-    argocd-image-updater.argoproj.io/image-list: nyuta01/cartservice:^1.0.0
+    argocd-image-updater.argoproj.io/image-list: cartservice=nyuta01/cartservice:^1.0.0
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
     argocd-image-updater.argoproj.io/write-back-target: kustomization
     argocd-image-updater.argoproj.io/cartservice.kustomize.image-name: cartservice
@@ -70,6 +73,9 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/cartservice
+    kustomize:
+      images:
+        - cartservice=nyuta01/cartservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
