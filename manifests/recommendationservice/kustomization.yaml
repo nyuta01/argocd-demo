@@ -7,4 +7,4 @@ resources:
 images:
 - name: recommendationservice
   newName: nyuta01/recommendationservice
-  newTag: v1.2.0
+  newTag: v1.2.2
