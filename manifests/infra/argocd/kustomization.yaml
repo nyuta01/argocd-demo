@@ -16,4 +16,4 @@ namespace: argocd
 images:
 - name: argoprojlabs/argocd-image-updater
   newName: nyuta01/argocd-image-updater
-  newTag: v2.10
+  newTag: v2.11
