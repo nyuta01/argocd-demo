@@ -7,4 +7,4 @@ resources:
 images:
 - name: productcatalogservice
   newName: nyuta01/productcatalogservice
-  newTag: v1.2.0
+  newTag: v1.3.0
