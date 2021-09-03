@@ -7,4 +7,4 @@ resources:
 images:
 - name: loadgenerator
   newName: nyuta01/loadgenerator
-  newTag: v1.2.0
+  newTag: v1.2.2
