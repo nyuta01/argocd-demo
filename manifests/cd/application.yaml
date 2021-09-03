@@ -47,9 +47,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/adservice
-    kustomize:
-      images:
-        - adservice=nyuta01/adservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -73,9 +70,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/cartservice
-    kustomize:
-      images:
-        - cartservice=nyuta01/cartservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
