@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/nyuta01/argocd-demo/compare/v1.2.2...v1.3.0) (2021-09-03)
+
+
+### Features
+
+* add boutique services ([e1bf1a9](https://www.github.com/nyuta01/argocd-demo/commit/e1bf1a903dad2d0f820437748e2fe19d51e4b593))
+
 ### [1.2.2](https://www.github.com/nyuta01/argocd-demo/compare/v1.2.1...v1.2.2) (2021-09-02)
 
 
