@@ -7,4 +7,4 @@ resources:
 images:
 - name: checkoutservice
   newName: nyuta01/checkoutservice
-  newTag: v1.2.2
+  newTag: v1.3.0
