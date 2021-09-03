@@ -7,4 +7,4 @@ resources:
 images:
 - name: shippingservice
   newName: nyuta01/shippingservice
-  newTag: v1.2.0
+  newTag: v1.3.0
