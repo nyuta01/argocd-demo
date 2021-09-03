@@ -93,9 +93,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/checkoutservice
-    kustomize:
-      images:
-        - checkoutservice=nyuta01/checkoutservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -119,9 +116,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/currencyservice
-    kustomize:
-      images:
-        - currencyservice=nyuta01/currencyservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -145,9 +139,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/emailservice
-    kustomize:
-      images:
-        - emailservice=nyuta01/emailservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -171,9 +162,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/frontend
-    kustomize:
-      images:
-        - frontend=nyuta01/frontend
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -197,9 +185,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/loadgenerator
-    kustomize:
-      images:
-        - loadgenerator=nyuta01/loadgenerator
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -223,9 +208,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/paymentservice
-    kustomize:
-      images:
-        - paymentservice=nyuta01/paymentservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -249,9 +231,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/productcatalogservice
-    kustomize:
-      images:
-        - productcatalogservice=nyuta01/productcatalogservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -275,9 +254,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/recommendationservice
-    kustomize:
-      images:
-        - recommendationservice=nyuta01/recommendationservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -296,9 +272,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/redis
-    kustomize:
-      images:
-        - redis=nyuta01/redis
   destination:
     server: https://kubernetes.default.svc
     namespace: default
@@ -322,9 +295,6 @@ spec:
     repoURL: git@github.com:nyuta01/argocd-demo.git
     targetRevision: main
     path: manifests/shippingservice
-    kustomize:
-      images:
-        - shippingservice=nyuta01/shippingservice
   destination:
     server: https://kubernetes.default.svc
     namespace: default
