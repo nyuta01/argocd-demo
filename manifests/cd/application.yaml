@@ -83,3 +83,258 @@ spec:
     automated:
       prune: true
       selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: checkoutservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: checkoutservice=nyuta01/checkoutservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/checkoutservice.kustomize.image-name: checkoutservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/checkoutservice
+    kustomize:
+      images:
+        - checkoutservice=nyuta01/checkoutservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: currencyservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: currencyservice=nyuta01/currencyservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/currencyservice.kustomize.image-name: currencyservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/currencyservice
+    kustomize:
+      images:
+        - currencyservice=nyuta01/currencyservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: emailservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: emailservice=nyuta01/emailservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/emailservice.kustomize.image-name: emailservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/emailservice
+    kustomize:
+      images:
+        - emailservice=nyuta01/emailservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: frontend
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: frontend=nyuta01/frontend:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/frontend.kustomize.image-name: frontend
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/frontend
+    kustomize:
+      images:
+        - frontend=nyuta01/frontend
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: loadgenerator
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: loadgenerator=nyuta01/loadgenerator:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/loadgenerator.kustomize.image-name: loadgenerator
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/loadgenerator
+    kustomize:
+      images:
+        - loadgenerator=nyuta01/loadgenerator
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: paymentservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: paymentservice=nyuta01/paymentservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/paymentservice.kustomize.image-name: paymentservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/paymentservice
+    kustomize:
+      images:
+        - paymentservice=nyuta01/paymentservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: productcatalogservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: productcatalogservice=nyuta01/productcatalogservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/productcatalogservice.kustomize.image-name: productcatalogservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/productcatalogservice
+    kustomize:
+      images:
+        - productcatalogservice=nyuta01/productcatalogservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: recommendationservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: recommendationservice=nyuta01/recommendationservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/recommendationservice.kustomize.image-name: recommendationservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/recommendationservice
+    kustomize:
+      images:
+        - recommendationservice=nyuta01/recommendationservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/redis
+    kustomize:
+      images:
+        - redis=nyuta01/redis
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: shippingservice
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: shippingservice=nyuta01/shippingservice:^1.0.0
+    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/private-repo
+    argocd-image-updater.argoproj.io/write-back-target: kustomization
+    argocd-image-updater.argoproj.io/shippingservice.kustomize.image-name: shippingservice
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:nyuta01/argocd-demo.git
+    targetRevision: main
+    path: manifests/shippingservice
+    kustomize:
+      images:
+        - shippingservice=nyuta01/shippingservice
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
