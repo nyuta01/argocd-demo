@@ -7,4 +7,4 @@ resources:
 images:
 - name: paymentservice
   newName: nyuta01/paymentservice
-  newTag: v1.2.0
+  newTag: v1.3.0
